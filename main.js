@@ -182,7 +182,7 @@ function player1Move() {
             }
         }
 
-        if (player1 == "ironMan") {
+        else if (player1 == "ironMan") {
             if (event.code == "KeyD") {
                 charLeftAdd += 8;
                 firstPlayer.style.left = charLeftAdd + "px";
@@ -205,7 +205,7 @@ function player1Move() {
             }
         }
 
-        if (player1 == "spiderMan") {
+        else if (player1 == "spiderMan") {
             if (event.code == "KeyD") {
                 charLeftAdd += 8;
                 firstPlayer.style.left = charLeftAdd + "px";
@@ -226,7 +226,7 @@ function player1Move() {
             }
         }
 
-        if (player1 == "wolverine") {
+        else if (player1 == "wolverine") {
             if (event.code == "KeyD") {
                 charLeftAdd += 8;
                 firstPlayer.style.left = charLeftAdd + "px";
@@ -246,6 +246,77 @@ function player1Move() {
             } else if (event.code == "KeyE") {
                 firstPlayer.src = "Images/Character-Images/Wolverine/wolvie-standingattacks.gif";
                 firstPlayer.className += " first-player-special-img";
+            }
+        }
+
+        else if (player1 == "warMachine") {
+            if (event.code == "KeyD") {
+                charLeftAdd += 8;
+                firstPlayer.style.left = charLeftAdd + "px";
+                firstPlayer.src = "Images/Character-Images/War-Machine/war-machine-stance.gif";
+            } else if (event.code == "KeyA") {
+                charLeftAdd -= 8;
+                firstPlayer.style.left = charLeftAdd + "px";
+                firstPlayer.src = "Images/Character-Images/War-Machine/war-machine-stance.gif";
+            } else if (event.code == "Space") {
+                firstPlayer.src = "Images/Character-Images/War-Machine/warmachine-missle.gif";
+                firstPlayer.className += " first-player-crouch-img";
+            } else if (event.code == "KeyS") {
+                firstPlayer.src = "Images/Character-Images/War-Machine/war-machine-block.gif";
+            } else if (event.code == "KeyE") {
+                firstPlayer.src = "Images/Character-Images/War-Machine/war-machine-ap.gif";
+                firstPlayer.className += " first-player-special-img";
+            } else if (event.code == "KeyQ") {
+                firstPlayer.src = "Images/Character-Images/War-Machine/war-machine-cb.gif";
+                firstPlayer.className += " first-player-special-img";
+            }
+        }
+
+        else if (player1 == "venom") {
+            if (event.code == "KeyD") {
+                charLeftAdd += 8;
+                firstPlayer.style.left = charLeftAdd + "px";
+                firstPlayer.src = "Images/Character-Images/Venom/venom-forward-walk.gif";
+            } else if (event.code == "KeyA") {
+                charLeftAdd -= 8;
+                firstPlayer.style.left = charLeftAdd + "px";
+                firstPlayer.src = "Images/Character-Images/Venom/venom-backward-walk.gif";
+            } else if (event.code == "Space") {
+                firstPlayer.src = "Images/Character-Images/Venom/venom-crouch.gif";
+            } else if (event.code == "KeyS") {
+                firstPlayer.src = "Images/Character-Images/Venom/venom-air6.gif";
+                firstPlayer.className += " first-player-Venom-S-img";
+
+            } else if (event.code == "KeyE") {
+                firstPlayer.src = "Images/Character-Images/Venom/venom-air-punch.gif";
+                firstPlayer.className += " first-player-special-img";
+            } else if (event.code == "KeyQ") {
+                firstPlayer.src = "Images/Character-Images/Venom/venom-fp.gif";
+                firstPlayer.className += " first-player-Venom-Q-img";
+            } else if (event.code == "KeyW") {
+                firstPlayer.src = "Images/Character-Images/Venom/venom-mp.gif";
+                firstPlayer.className += " first-player-special-img";
+            }
+        }
+
+        else if (player1 == "thanos") {
+            if (event.code == "KeyD") {
+                charLeftAdd += 8;
+                firstPlayer.style.left = charLeftAdd + "px";
+                firstPlayer.src = "Images/Character-Images/Thanos/thanos-forward-walk.gif";
+            } else if (event.code == "KeyA") {
+                charLeftAdd -= 8;
+                firstPlayer.style.left = charLeftAdd + "px";
+                firstPlayer.src = "Images/Character-Images/Thanos/thanos-backward-walk.gif";
+            } else if (event.code == "Space") {
+                firstPlayer.src = "Images/Character-Images/Thanos/than-wins.gif";
+                firstPlayer.className += " first-player-special-img";
+            } else if (event.code == "KeyS") {
+                firstPlayer.src = "Images/Character-Images/Thanos/than-special.gif";
+
+            } else if (event.code == "KeyQ") {
+                firstPlayer.src = "Images/Character-Images/Thanos/thanos-rocks.gif";
+                firstPlayer.className += " first-player-Venom-Q-img";
             }
         }
     }
@@ -297,7 +368,7 @@ function player2Move() {
             }
         }
 
-        if (player2 == "ironManMirror") {
+        else if (player2 == "ironManMirror") {
             if (event.code == "ArrowRight") {
                 charRightAdd -= 8;
                 secondPlayer.style.right = charRightAdd + "px";
@@ -321,7 +392,7 @@ function player2Move() {
 
         }
 
-        if (player2 == "spiderManMirror") {
+        else if (player2 == "spiderManMirror") {
             if (event.code == "ArrowRight") {
                 charRightAdd -= 8;
                 secondPlayer.style.right = charRightAdd + "px";
@@ -343,7 +414,7 @@ function player2Move() {
             }
         }
 
-        if (player2 == "wolverineMirror") {
+        else if (player2 == "wolverineMirror") {
             if (event.code == "ArrowRight") {
                 charRightAdd -= 8;
                 secondPlayer.style.right = charRightAdd + "px";
@@ -363,6 +434,75 @@ function player2Move() {
             } else if (event.code == "Numpad6") {
                 secondPlayer.src = "Images/Character-Images/Wolverine-Mirror/wolvie-drillclaw.gif";
                 secondPlayer.className += " second-player-special-img"
+            }
+        }
+
+        else if (player2 == "warMachineMirror") {
+            if (event.code == "ArrowRight") {
+                charRightAdd -= 8;
+                secondPlayer.style.right = charRightAdd + "px";
+                secondPlayer.src = "Images/Character-Images/War-Machine-Mirror/war-machine-stance.gif";
+            } else if (event.code == "ArrowLeft") {
+                charRightAdd += 8;
+                secondPlayer.style.right = charRightAdd + "px";
+                secondPlayer.src = "Images/Character-Images/War-Machine-Mirror/war-machine-stance.gif";
+            } else if (event.code == "Numpad0") {
+                secondPlayer.src = "Images/Character-Images/War-Machine-Mirror/warmachine-missle.gif";
+                secondPlayer.className += " second-player-crouch-img";
+            } else if (event.code == "ArrowDown") {
+                secondPlayer.src = "Images/Character-Images/War-Machine-Mirror/war-machine-block.gif";
+            } else if (event.code == "Numpad4") {
+                secondPlayer.src = "Images/Character-Images/War-Machine-Mirror/war-machine-ap.gif";
+                secondPlayer.className += " second-player-special-img"
+            } else if (event.code == "Numpad6") {
+                secondPlayer.src = "Images/Character-Images/War-Machine-Mirror/war-machine-cb.gif";
+                secondPlayer.className += " first-player-special-img";
+            }
+        }
+
+        else if (player2 == "venomMirror") {
+            if (event.code == "ArrowRight") {
+                charRightAdd -= 8;
+                secondPlayer.style.right = charRightAdd + "px";
+                secondPlayer.src = "Images/Character-Images/Venom-Mirror/venom-backward-walk.gif";
+            } else if (event.code == "ArrowLeft") {
+                charRightAdd += 8;
+                secondPlayer.style.right = charRightAdd + "px";
+                secondPlayer.src = "Images/Character-Images/Venom-Mirror/venom-forward-walk.gif";
+            } else if (event.code == "Numpad0") {
+                secondPlayer.src = "Images/Character-Images/Venom-Mirror/venom-crouch.gif";
+            } else if (event.code == "ArrowDown") {
+                secondPlayer.src = "Images/Character-Images/Venom-Mirror/venom-air6.gif";
+                secondPlayer.className += " second-player-Venom-ArrowDown-img";
+            } else if (event.code == "Numpad4") {
+                secondPlayer.src = "Images/Character-Images/Venom-Mirror/venom-air-punch.gif";
+                secondPlayer.className += " second-player-special-img"
+            } else if (event.code == "Numpad6") {
+                secondPlayer.src = "Images/Character-Images/Venom-Mirror/venom-fp.gif";
+                secondPlayer.className += " second-player-Venom-Numpad6-img";
+            } else if (event.code == "ArrowUp") {
+                secondPlayer.src = "Images/Character-Images/Venom-Mirror/venom-mp.gif";
+                secondPlayer.className += " first-player-special-img";
+            }
+        }
+
+        else if (player2 == "thanosMirror") {
+            if (event.code == "ArrowRight") {
+                charRightAdd -= 8;
+                secondPlayer.style.right = charRightAdd + "px";
+                secondPlayer.src = "Images/Character-Images/Thanos-Mirror/thanos-backward-walk.gif";
+            } else if (event.code == "ArrowLeft") {
+                charRightAdd += 8;
+                secondPlayer.style.right = charRightAdd + "px";
+                secondPlayer.src = "Images/Character-Images/Thanos-Mirror/thanos-forward-walk.gif";
+            } else if (event.code == "Numpad0") {
+                secondPlayer.src = "Images/Character-Images/Thanos-Mirror/than-wins.gif";
+                secondPlayer.className += " second-player-special-img";
+            } else if (event.code == "ArrowDown") {
+                secondPlayer.src = "Images/Character-Images/Thanos-Mirror/than-special.gif";
+            } else if (event.code == "Numpad6") {
+                secondPlayer.src = "Images/Character-Images/Thanos-Mirror/thanos-rocks.gif";
+                secondPlayer.className += " second-player-Venom-Numpad6-img";
             }
         }
     }
@@ -406,6 +546,24 @@ function playerStop1() {
                 firstPlayer.className = "first-player-wolverine-img";
             }
         }
+        else if (player1 == "warMachine") {
+            if (event.code == "KeyW" || event.code == "KeyD" || event.code == "KeyA" || event.code == "KeyS" || event.code == "Space" || event.code == "KeyQ" || event.code == "KeyE") {
+                firstPlayer.src = "Images/Character-Images/War-Machine/war-machine-stance.gif";
+                firstPlayer.className = "first-player-wolverine-img";
+            }
+        }
+        else if (player1 == "venom") {
+            if (event.code == "KeyW" || event.code == "KeyD" || event.code == "KeyA" || event.code == "KeyS" || event.code == "Space" || event.code == "KeyQ" || event.code == "KeyE") {
+                firstPlayer.src = "Images/Character-Images/Venom/venom-stance.gif";
+                firstPlayer.className = "first-player-wolverine-img";
+            }
+        }
+        else if (player1 == "thanos") {
+            if (event.code == "KeyW" || event.code == "KeyD" || event.code == "KeyA" || event.code == "KeyS" || event.code == "Space" || event.code == "KeyQ" || event.code == "KeyE") {
+                firstPlayer.src = "Images/Character-Images/Thanos/thanos-stance.gif";
+                firstPlayer.className = "first-player-wolverine-img";
+            }
+        }
     }
 
 }
@@ -439,6 +597,24 @@ function playerStop2() {
         else if (player2 == "wolverineMirror") {
             if (event.code == "ArrowUp" || event.code == "ArrowDown" || event.code == "ArrowLeft" || event.code == "ArrowRight" || event.code == "Numpad0" || event.code == "Numpad4" || event.code == "Numpad6") {
                 secondPlayer.src = "Images/Character-Images/Wolverine-Mirror/wolverine-boneclaw-stance.gif";
+                secondPlayer.className = "second-player-wolverineMirror-img";
+            }
+        }
+        else if (player2 == "warMachineMirror") {
+            if (event.code == "ArrowUp" || event.code == "ArrowDown" || event.code == "ArrowLeft" || event.code == "ArrowRight" || event.code == "Numpad0" || event.code == "Numpad4" || event.code == "Numpad6") {
+                secondPlayer.src = "Images/Character-Images/War-Machine-Mirror/war-machine-stance.gif";
+                secondPlayer.className = "second-player-wolverineMirror-img";
+            }
+        }
+        else if (player2 == "venomMirror") {
+            if (event.code == "ArrowUp" || event.code == "ArrowDown" || event.code == "ArrowLeft" || event.code == "ArrowRight" || event.code == "Numpad0" || event.code == "Numpad4" || event.code == "Numpad6") {
+                secondPlayer.src = "Images/Character-Images/Venom-Mirror/venom-stance.gif";
+                secondPlayer.className = "second-player-wolverineMirror-img";
+            }
+        }
+        else if (player2 == "thanosMirror") {
+            if (event.code == "ArrowUp" || event.code == "ArrowDown" || event.code == "ArrowLeft" || event.code == "ArrowRight" || event.code == "Numpad0" || event.code == "Numpad4" || event.code == "Numpad6") {
+                secondPlayer.src = "Images/Character-Images/Thanos-Mirror/thanos-stance.gif";
                 secondPlayer.className = "second-player-wolverineMirror-img";
             }
         }
