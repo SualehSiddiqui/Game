@@ -5,9 +5,10 @@
 }
 
 .background-div {
-    background-image: url(Images/UI-Images/start.png);
+    background-image: url(Images/UI-Images/start-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100vh;
 }
@@ -263,10 +264,14 @@
     width: 23px;
 }
 
-.health-1,
-.health-2 {
-    background-color: #032a80;
+.health-1 {
+    background-color: #f5400a;
     width: 250px;
+}
+
+.health-2 {
+    background-color: #f3610c;
+    width: 350px;
 }
 
 .fight-time-div {
@@ -392,25 +397,28 @@
     right: 120px;
 }
 
-
-
-.first-player-special-img, .second-player-special-img{
+.first-player-special-img,
+.second-player-special-img {
     height: 300px;
 }
 
 
-.first-player-crouch-img, .second-player-crouch-img{
-    height: 150px ;
+.first-player-crouch-img,
+.second-player-crouch-img {
+    height: 150px;
 }
 
-.first-player-spider-crouch-img , .second-player-spider-crouch-img{
+.first-player-spider-crouch-img,
+.second-player-spider-crouch-img {
     height: 120px;
 }
 
-.first-player-Venom-Q-img , .second-player-Venom-Numpad6-img{
+.first-player-Venom-Q-img,
+.second-player-Venom-Numpad6-img {
     height: 200px;
 }
 
-.first-player-Venom-S-img , .second-player-Venom-ArrowDown-img{
+.first-player-Venom-S-img,
+.second-player-Venom-ArrowDown-img {
     height: 250px;
 }

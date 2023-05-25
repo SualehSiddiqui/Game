@@ -21,9 +21,9 @@ var interval = setInterval(function () {
     fightTime.innerHTML = "0" + min + " : " + s;
 }, 1000)
 
-var time = setTimeout(foo, 180000);
+var time = setTimeout(timeUp, 180000);
 
-function foo() {
+function timeUp() {
     Swal.fire({
         title: 'Time Out',
         showClass: {
@@ -36,13 +36,12 @@ function foo() {
 }
 
 var fightingPage = document.getElementById("fighting-bg");
-// var arr= ['house','temple','jungle','roof']
-// var background = arr[Math.floor(Math.random()*4)]
-// fightingPage.className = background;
+var arr= ['house','temple','jungle','roof']
+var background = arr[Math.floor(Math.random()*4)]
+fightingPage.className = background;
 // console.log(fightingPage.className)
 
 function player1Image() {
-    if (fightingPage.className == "house") {
         //For Player 1
         if (player1 == "captainAmerica") {
             var firstPlayer = document.getElementById("player-1-image");
@@ -78,9 +77,6 @@ function player1Image() {
             firstPlayer.className = "first-player-thanos-img"
         }
 
-        //For Player1
-
-    }
 }
 
 function player2Image() {
@@ -138,7 +134,6 @@ function playerMove() {
 
 function player1Move() {
     console.log(event.code)
-    if (fightingPage.className == "house") {
         if (player1 == "captainAmerica") {
             if (event.code == "KeyD") {
                 charLeftAdd += 8;
@@ -319,12 +314,9 @@ function player1Move() {
                 firstPlayer.className += " first-player-Venom-Q-img";
             }
         }
-    }
 }
 
 function player2Move() {
-    console.log(event.code)
-    if (fightingPage.className == "house") {
         if (player2 == "captainAmericaMirror") {
             if (event.code == "ArrowRight") {
                 charRightAdd -= 8;
@@ -505,7 +497,6 @@ function player2Move() {
                 secondPlayer.className += " second-player-Venom-Numpad6-img";
             }
         }
-    }
 }
 
 function playerStop() {
@@ -514,8 +505,7 @@ function playerStop() {
 }
 
 function playerStop1() {
-    console.log(event.code)
-    if (fightingPage.className == "house") {
+    // console.log(event.code)
         if (player1 == "captainAmerica") {
             if (event.code == "KeyW" || event.code == "KeyD" || event.code == "KeyA" || event.code == "KeyS" || event.code == "Space" || event.code == "KeyQ" || event.code == "KeyE") {
                 firstPlayer.src = "Images/Character-Images/Captain-America/captain-america-stance.gif";
@@ -564,12 +554,10 @@ function playerStop1() {
                 firstPlayer.className = "first-player-wolverine-img";
             }
         }
-    }
 
 }
 
 function playerStop2() {
-    if (fightingPage.className == "house") {
         if (player2 == "captainAmericaMirror") {
             if (event.code == "ArrowUp" || event.code == "ArrowDown" || event.code == "ArrowLeft" || event.code == "ArrowRight" || event.code == "Numpad0" || event.code == "Numpad4" || event.code == "Numpad6") {
                 secondPlayer.src = "Images/Character-Images/Captain-America-Mirror/captain-america-stance.gif";
@@ -618,6 +606,10 @@ function playerStop2() {
                 secondPlayer.className = "second-player-wolverineMirror-img";
             }
         }
-    }
+
+}
+
+function controlsPlayer1(){
+    // if()
 
 }
