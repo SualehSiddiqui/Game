@@ -608,8 +608,3 @@ function playerStop2() {
         }
 
 }
-
-function controlsPlayer1(){
-    // if()
-
-}
